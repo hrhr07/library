@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="script.js"></script>
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Library</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>Available Books</h1>
+    <dialog id="favDialog">
+      <form id="bookForm" method="dialog">
+        <div class="content">
+          <label> Enter the information of the book you want to add </label>
+          <label>
+            Book Name:
+            <input id="bookName" type="text" required />
+          </label>
+          <label>
+            Author:
+            <input id="authorName" type="text" required />
+          </label>
+          <label>
+            Pages:
+            <input id="pages" type="number" required />
+          </label>
+        </p>
+        <div>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+    <p>
+      <button id="showDialog">New Book</button>
+    </p>
+    <output></output>
+
+    <ul id="book-list"></ul>
   </body>
 </html>
